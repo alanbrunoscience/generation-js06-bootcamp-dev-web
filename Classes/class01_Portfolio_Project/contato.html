@@ -7,12 +7,16 @@
         <meta name="description" content="Projeto Portfólio" />
         <meta name="author" content="Generation Brasil" />
         <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+
+        <!-- Link para a Folha de Estilo da Página - CSS -->
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <!-- Cabeçalho da Página (header) -->
         <header>
             <!-- Div - Conteúdo do Cabeçalho -->
-            <div id="header_content">
+            <div id="header_content" class="flex">
                 <!-- Título do Cabeçalho -->
                 <div id="titulo">
                     <!-- Seu nome -->
@@ -26,10 +30,10 @@
                         <!-- Marcadores não ordenados + links -->
                         <ul id="menu">
                             <li>
-                                <a href="index.html"> Home </a>
+                                <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a href="contato.html"> Contato </a>
+                                <a href="contato.html">Contato</a>
                             </li>
                         </ul>
                     </nav>
@@ -40,7 +44,7 @@
         <!-- Seção Principal da Página (main) -->
         <main>
             <!-- Seção Formulário de Contato -->
-            <section id="contact">
+            <section id="contact" class="flex">
                 <!-- Seção do Formulário -->
                 <form action="#" method="submit" id="formulario">
                     <label for="name">Nome: </label>
@@ -85,41 +89,55 @@
                 </form>
 
                 <!-- Seção do Google Maps -->
-                <article id="mapa">
-                    <p>Av. Paulista, 100</p>
-                    <p>São Paulo - SP</p>
+                <article id="mapa" class="flex_start">
+                    <div id="endereco">
+                        <p>Av. Paulista, 100</p>
+                        <p>São Paulo - SP</p>
+                    </div>
 
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9284196326835!2d-46.64398438592299!3d-23.57101417630468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bd92bce431%3A0xc37ded133806ef0b!2sAv.%20Paulista%2C%20100%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-000!5e0!3m2!1sen!2sbr!4v1739066548407!5m2!1sen!2sbr"
                         width="400"
                         height="250"
                         frameborder="0"
-                        style="border:0;"
+                        style="border: 0"
                         allowfullscreen=""
                         aria-hidden="false"
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
                         tabindex="0"
                         id="mapa"
+                        onmousemove="mapaZoom()"
+                        onmouseout="mapaNormal()"
                     ></iframe>
                 </article>
             </section>
         </main>
 
         <!-- Rodapé da Página (footer) -->
-        <footer>
+        <footer class="flex">
             <!-- Seção de Contato - Redes Sociais -->
             <section id="redes_sociais">
                 <a href="">
-                    <img src="./assets/img/linkedin.svg" alt="LinkedIn" />
+                    <img
+                        src="./assets/img/linkedin.svg"
+                        alt="LinkedIn"
+                        class="social_icon"
+                    />
                 </a>
 
                 <a href="">
-                    <img src="./assets/img/github.svg" alt="Github" />
+                    <img
+                        src="./assets/img/github.svg"
+                        alt="GitHub"
+                        class="social_icon"
+                    />
                 </a>
 
                 <a href="">
-                    <img src="./assets/img/instagram.svg" alt="Instagram" />
+                    <img
+                        src="./assets/img/instagram.svg"
+                        alt="Instagram"
+                        class="social_icon"
+                    />
                 </a>
             </section>
 

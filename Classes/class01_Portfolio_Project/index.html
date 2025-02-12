@@ -2,11 +2,17 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Projeto Portfólio" />
         <meta name="author" content="Alan Bruno" />
         <meta name="keywords" content="HTML, CSS, JavaScript" />
+
         <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+
+        <!-- Link para a Folha de Estilo da Página - CSS -->
+        <link rel="stylesheet" href="./css/style.css" />
+
         <title>Meu Perfil</title>
     </head>
 
@@ -14,7 +20,7 @@
         <!-- Cabeçalho da Página (header) -->
         <header>
             <!-- Div - Conteúdo do Cabeçalho -->
-            <div id="header_content">
+            <div id="header_content" class="flex">
                 <!-- Título do Cabeçalho -->
                 <div id="titulo">
                     <!-- Seu Nome -->
@@ -28,10 +34,10 @@
                         <!-- Marcadores não ordenados + links -->
                         <ul id="menu">
                             <li>
-                                <a href="index.html"> Home </a>
+                                <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a href="contato.html"> Contato </a>
+                                <a href="contato.html">Contato</a>
                             </li>
                         </ul>
                     </nav>
@@ -42,16 +48,17 @@
         <!-- Seção Principal da Página (main) -->
         <main>
             <!-- Seção Sobre Você -->
-            <section id="about">
+            <section id="about" class="flex_start">
                 <!-- Título da Seção -->
                 <h2>Sobre a Generation Brasil</h2>
 
                 <!-- Conteúdo da Seção -->
-                <div id="conteudo">
+                <div id="conteudo" class="flex">
                     <!-- Imagem do criador do conteúdo -->
                     <img
                         src="./assets/img/user_01.svg"
                         alt="Foto do criador desse conteúdo"
+                        class="img_profile"
                     />
 
                     <!-- Texto sobre o criador do conteúdo -->
@@ -63,17 +70,24 @@
                             repellendus quia rerum laudantium perferendis ipsa
                             id nostrum iste!
                         </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Libero dicta voluptas neque blanditiis maxime
+                            accusamus magni est minima fugiat commodi mollitia
+                            tempore ex quidem aspernatur beatae id, magnam,
+                            dolorum molestias.
+                        </p>
                     </article>
                 </div>
             </section>
 
             <!-- Seção contendo um vídeo de sua preferência -->
-            <section id="video">
+            <section id="video" class="flex_start">
                 <!-- Título da Seção -->
                 <h2>Meu vídeo favorito:</h2>
 
                 <!-- Vídeo da Seção -->
-                <div id="youtube">
+                <div id="youtube" class="flex">
                     <iframe
                         width="560"
                         height="315"
@@ -87,25 +101,35 @@
         </main>
 
         <!-- Rodapé da Página (footer) -->
-        <footer>
+        <footer class="flex">
             <!-- Seção de Contato - Redes Sociais -->
             <section id="redes_sociais">
                 <a href="">
-                    <img src="./assets/img/linkedin.svg" alt="LinkedIn" />
+                    <img
+                        src="./assets/img/linkedin.svg"
+                        alt="LinkedIn"
+                        class="social_icon"
+                    />
                 </a>
 
                 <a href="">
-                    <img src="./assets/img/github.svg" alt="GitHub" />
+                    <img
+                        src="./assets/img/github.svg"
+                        alt="GitHub"
+                        class="social_icon"
+                    />
                 </a>
 
                 <a href="">
-                    <img src="./assets/img/instagram.svg" alt="Instagram" />
+                    <img
+                        src="./assets/img/instagram.svg"
+                        alt="Instagram"
+                        class="social_icon"
+                    />
                 </a>
             </section>
 
-            <h3>
-                Feito com 🧡 por Generation Brasil - 2025
-            </h3>
+            <h3>Feito com 🧡 por Generation Brasil - 2025</h3>
         </footer>
     </body>
 </html>
